@@ -1,0 +1,142 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Cormorant", serif; */
+}
+.container {
+  max-width: 1240px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 28px;
+}
+
+.header_logo {
+  margin-right: 80px;
+}
+
+.menu {
+  margin-top: 35px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 65px;
+}
+
+.menu__item {
+  padding-right: 6px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #151618;
+}
+
+.user__actions {
+  display: flex;
+  gap: 20px;
+  margin-top: 33px;
+  padding-right: 4px;
+}
+
+.user__actions__item--searh {
+  margin-left: 80px;
+}
+
+.main {
+  margin-top: 38px;
+}
+
+.top {
+  background: url("./images/bg-top.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 500px;
+}
+.top__wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  padding-bottom: 48px;
+}
+
+.top__title {
+  max-width: 789px;
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 100%;
+  color: #fff;
+}
+.top__subtitle {
+  line-height: normal;
+  max-width: 557px;
+  margin-top: 20px;
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+}
+
+.variety-tea {
+  padding-top: 149px;
+}
+
+.blockquote {
+  display: flex;
+  justify-content: center; /* Центрирует содержимое горизонтально */
+  align-items: center; /* Центрирует содержимое вертикально, если нужно */
+  text-align: center; /* Центрирует текст внутри блока */
+}
+.blockquote__text {
+  max-width: 704px;
+  font-family: "Cormorant", serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 40px;
+  text-align: center;
+  color: #151618;
+  line-height: normal;
+}
+.variety-tea__wrap {
+  margin-top: 149px;
+}
+.variety-tea__title h3 {
+    padding-left: 11px;
+  text-align: center;
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #151618;
+  line-height: normal;
+}
+.variety-tea__cards {
+  display: flex;
+  padding-bottom: 150px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 57px;
+}
+.variety-tea__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.variety-tea__img {
+}
+
+.variety-tea__name {
+  margin-top: 10px;
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #151618;
+}
