@@ -14,14 +14,20 @@
     <title>TealuxE</title>
   </head>
   <body>
+    <div class="fone"></div>
     <header class="header">
       <div class="container">
         <div class="header-wrap">
-          <a href="#" class="header_logo">
+          <div class="burger__wrap">
+            <img src="./images/icons/burger.svg" alt="menu" />
+          </div>
+          <a href="#" class="header__logo">
             <img src="./images/icons/logo.svg" alt="TealuxE" />
           </a>
           <nav class="menu">
             <ul class="menu__list">
+            <img class="close" src="./images/icons/close.svg" alt="close">
+
               <li class="menu__item">
                 <a href="#" class="menu__link">Black</a>
               </li>
@@ -42,6 +48,32 @@
                 <a href="#" class="menu__link">Pu-erh</a>
               </li>
             </ul>
+
+            <ul class="menu-contact__list">
+                <li class="menu-contact__item">Contact Us</li>
+                <li class="menu-contact__item">Our Blog</li>
+                <li class="menu-contact__item">Shipping and Delivery</li>
+            </ul>
+
+            <div class="menu__footer">
+                <ul class="user__actions user__actions__footer">
+                    <li class="user__actions__item">
+                      <a href="#" class="user__actions__link">
+                        <img src="./images/icons/basket.svg" alt="basket" />
+                      </a>
+                    </li>
+                    <li class="user__actions__item">
+                      <a href="#" class="user__actions__link">
+                        <img src="./images/icons/profile.svg" alt="profile" />
+                      </a>
+                    </li>
+                    <li class="user__actions__item .user__actions__item--searh__mobile">
+                      <a href="#" class="user__actions__link">
+                        <img src="./images/icons/search.svg" alt="search" />
+                      </a>
+                    </li>
+                  </ul>
+            </div>
           </nav>
 
           <ul class="user__actions">
@@ -137,5 +169,7 @@
         </div>
       </section>
     </main>
+
+    <script src="./main.js"></script>
   </body>
 </html>
