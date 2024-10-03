@@ -189,7 +189,6 @@ body {
 }
 
 .reviews__blockquote {
-
 }
 
 .reviews__item__text {
@@ -205,10 +204,216 @@ body {
   color: #151618;
 }
 
+.main-blog {
+  padding: 150px 0;
+}
+
+.main-blog__wrap {
+}
+.main-blog__title {
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #151618;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.main-blog__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px 58px;
+}
+.main-blog__item {
+    display: flex;
+    flex-basis: 542px;
+}
+
+.main-blog__item__photo {
+    width: 270px;
+    height: 180px;
+}
+
+.main-blog__item__cont {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 20px;
+}
+.main-blog__item__title {
+  font-family: "Cormorant", serif;
+
+  font-weight: 400;
+  font-size: 24px;
+  color: #151618;
+}
+
+.main-blog__item__links {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: auto;
+}
+.main-blog__item__author {
+  font-weight: 300;
+  font-size: 13px;
+  color: #151618;
+  padding-top: 10px;
+}
 
 
+.main-blog__item__read {
+position: relative;
+  font-weight: 300;
+  font-size: 13px;
+  color: #151618;
+}
 
+.main-blog__item__read::after {
+    content: "";
+    background-image: url(./images/icons/go.svg);
+    position: absolute;
+    top: 50%;
+    left: 38px;
+    width: 5px;
+    height: 10px;
+    transform: translateY(-50%);
+    
+}
+.main-blog__wrap__all {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.main-blog__all {
+  padding: 12px 41px;
+  cursor: pointer;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  color: #151618;
+}
 
+.main-form {
+    background-color: #f7f2ea;
+    padding: 100px 0;
+}
+.main-form__wrap {
+    display: flex;
+    gap: 0 40px;
+}
+.main-form__left {
+    max-width: 580px;
+
+}
+.main-form__title {
+    font-family: "Cormorant", serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #151618;
+    margin-bottom: 50px;
+}
+.main-form__desc {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    color: #151618;
+}
+.main-form__right {
+}
+.main-form__form {
+}
+.main-form__wrap-email {
+    display: flex;
+
+}
+.main-form__email {
+    flex-grow: 1;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #b8b58b;
+    margin-right: 25px;
+    padding-left: 15px;
+    padding-top: 12px;
+}
+.main-form__btn {
+    font-weight: 300;
+    font-size: 20px;
+    color: #151618;
+    padding: 12px 41px;
+    background-color: #fff;
+}
+.main-form__privacy {
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
+    margin-left: -4px;
+    margin-top: 10px;
+}
+
+/* --------------------- */
+/* Скрываем стандартный чекбокс */
+.main-form__privacy__custom-checkbox input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Стили для контейнера чекбокса */
+  .main-form__privacy__custom-checkbox{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /* Стили для кастомной отметки чекбокса */
+  .main-form__privacy__custom-checkbox .main-form__checkmark {
+    width: 10px;
+    height: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #151618;
+    display: inline-block;
+    position: relative;
+    transition: background-color 0.2s ease;
+    margin-right: 10px;
+    top: 3px;
+    left: 5px;
+  }
+  
+  /* Стили для активного состояния чекбокса (когда он выбран) */
+  .main-form__privacy__custom-checkbox input[type="checkbox"]:checked + .main-form__checkmark {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+  }
+  
+  /* Добавление галочки */
+  .main-form__privacy__custom-checkbox .main-form__checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 2px;
+    top: 0px;
+    width: 5px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  /* Показываем галочку, если чекбокс выбран */
+  .main-form__privacy__custom-checkbox input[type="checkbox"]:checked + .main-form__checkmark::after {
+    display: block;
+  }
+  
+
+/* --------------------- */
+
+.main-form__privacy__text {
+    font-weight: 300;
+    font-size: 13px;
+    color: #151618;
+}
 
 
 
@@ -260,8 +465,10 @@ body {
   }
 
   .variety-tea__cards {
+    flex-wrap: nowrap;
     gap: 0;
     margin-top: 24px;
+    padding-bottom: 123px;
   }
 
   .variety-tea__name {
@@ -271,6 +478,29 @@ body {
   .reviews__item:last-child {
     display: none;
   }
+
+  .main-blog__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 67px 20px;
+}
+.main-blog__item {
+    display: flex;
+    flex-basis: 460px;
+}
+
+.main-blog__item__photo {
+    max-width: 230px;
+    max-height: 153px;
+}
+
+.main-blog {
+    padding: 117px 0;
+}
+
+.main-blog__item__links {
+    gap: 19px;
+}
 }
 
 @media (max-width: 768px) {
@@ -392,6 +622,7 @@ body {
   }
 
   .variety-tea__cards {
+    flex-wrap: wrap;
     margin-top: 41px;
   }
 
@@ -418,16 +649,70 @@ body {
   .reviews__item:last-child {
     display: block;
   }
+
+  .main-blog {
+    padding: 127px 0;
+}
+
+  .main-blog__list {
+    display: flex;
+    flex-wrap: wrap; /* Чтобы элементы переносились */
+    justify-content: space-between; /* Распределяет элементы между краями */
+  }
+
+  .main-blog__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px 0;
+}
+
+.main-blog__item {
+    display: flex;
+    flex-basis: 0;
+    max-width: 542px;
+}
+
+.main-blog__item:nth-child(odd) {
+    align-self: flex-start; /* Прижимаем к левому краю */
+  }
+  
+  .main-blog__item:nth-child(even) {
+    align-self: flex-end; /* Прижимаем к правому краю */
+  }
+
+  .main-blog__item__photo {
+    max-width: 270px;
+    max-height: 180px;
+}
+
+.main-blog__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px 0;
+    padding: 0 44px;
+}
+
+.main-blog__item__links {
+    gap: 49px;
+}
+
+.main-blog__item__author {
+    padding-top: 0px;
+}
 }
 
 @media (max-width: 676px) {
-    .reviews__item {
-        flex-basis: 220px;
-      }
-    
-      .reviews__list {
-        gap: 30px 20px;
-    }
+  .reviews__item {
+    flex-basis: 220px;
+  }
+
+  .reviews__list {
+    gap: 30px 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -471,30 +756,66 @@ body {
     padding-left: 0;
   }
 
+  .variety-tea__blockquote__text {
+    max-width: 376px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+  }
+
   .variety-tea__cards {
     margin-top: 29px;
+    padding-bottom: 51px;
+
   }
 
   .variety-tea__img img {
     display: block;
     max-width: 100%;
-    width: 160px;
-    height: 160px;
+    width: 208px;
+    height: 208px;
   }
+
+  .variety-tea__name {
+    margin-top: 10px;
+  }
+
+  .reviews {
+    padding-bottom: 56px;
+}
 
   .reviews__title {
     padding-bottom: 50px;
-}
+  }
 
-.reviews__item {
+  .reviews__item {
     flex-basis: 220px;
   }
 
   .reviews__list {
     gap: 30px 20px;
+  }
+
+  .main-blog {
+    padding: 59px 0;
 }
 
+  .main-blog__list {
+    /* display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px 0; */
+    padding: 0;
+}
 
+.main-blog__item__links {
+    gap: 22px;
+}
+
+  .main-blog__item__photo {
+    max-width: 230px;
+    max-height: 153px;
+}
 }
 
 @media (max-width: 360px) {
@@ -550,6 +871,11 @@ body {
     padding-bottom: 80px;
   }
 
+  .variety-tea__img img {
+    max-width: 170px;
+    max-height: 170px;
+}
+
   .reviews {
     padding: 50px 0;
   }
@@ -557,13 +883,68 @@ body {
   .reviews__title {
     padding-bottom: 30px;
     font-size: 24px;
-}
+  }
 
-.reviews__item:not(:first-child, :last-child) {
+  .reviews__item:not(:first-child, :last-child) {
     display: none;
-}
+  }
 
-.reviews__item {
+  .reviews__item {
     flex-basis: 100%;
   }
+
+  .main-blog__item {
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.main-blog__item__photo {
+    max-width: 270px;
+    max-height: 180px;
+}
+
+.main-blog__item__cont {
+    margin-left: 0;
+}
+
+.main-blog__item:nth-child(odd) {
+    align-self: normal;
+}
+
+.main-blog__item:nth-child(even) {
+    align-self: normal;
+}
+
+.main-blog {
+    padding: 51px 0;
+}
+
+.main-blog__title {
+font-size: 24px;
+}
+
+.main-blog__title {
+    padding-bottom: 30px;
+}
+
+.main-blog__list {
+    gap: 22px;
+    padding: 0 35px;
+}
+
+.main-blog__item {
+    gap: 14px;
+}
+
+.main-blog__item__links {
+    gap: 14px;
+}
+
+.main-blog__item:nth-child(n+3) {
+    display: none;
+  }
+
+  .main-blog__wrap__all {
+    margin-top: 28px;
+}
 }
