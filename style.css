@@ -454,6 +454,158 @@ position: relative;
 .prioritise__item__img {
 }
 
+.footer {
+    padding: 95px 0 22px;
+    background-color: #F7F2EA;
+}
+.footer__wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__main {
+    display: flex;
+    gap: 0 168px;
+    margin-bottom: 100px;
+}
+
+.footer__left {
+    display: flex;
+    gap: 0 226px;
+}
+.footer__products {
+    display: flex;
+    flex-direction: column;
+}
+.footer__left__title{
+    margin-bottom: 50px;
+    font-family: "Cormorant", serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #151618;
+}
+.footer__left__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+.footer__left__item {
+}
+.footer__left__link {
+    font-weight: 300;
+    font-size: 16px;
+    color: #151618;
+}
+.footer__company {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__right {
+}
+.footer__touch__title {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 139px;
+    margin-bottom: 50px;
+    font-family: "Cormorant", serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #151618;
+}
+
+.footer__touch__wrap {
+display: flex;
+gap: 0 43px;
+}
+.footer__touch__right {
+    max-width: 270px;
+}
+.footer__blockquote {
+}
+.footer__blockquote__text {
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    color: #151618;
+}
+.footer__blockquote__author {
+    font-weight: 300;
+    font-size: 12px;
+    color: #151618;
+}
+.footer__touch__left {
+    max-width: 270px;
+}
+.footer__contact__text {
+    font-weight: 300;
+    font-size: 13px;
+    color: #151618;
+    margin-bottom: 20px;
+}
+.footer__wrap__contact {
+}
+.footer__logo {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer__logo__img {
+    margin-right: 40px;
+}
+.footer__contact {
+    margin-top: 20px;
+}
+.footer__contact__up {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contact__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    margin-bottom: 51px;
+}
+.footer__contact__item {
+    display: flex;
+    gap: 0 10px;
+    font-weight: 300;
+    font-size: 13px;
+    color: #151618;
+}
+.footer__contact__soc {
+}
+.footer__soc__list {
+    display: flex;
+    gap: 0 20px;
+}
+.footer__soc__item {
+}
+.footer__soc__link {
+}
+.footer__down {
+    display: flex;
+    gap: 0 192px;
+
+}
+.footer__company__text {
+    font-weight: 300;
+    font-size: 16px;
+    color: #151618;
+}
+.footer__payment-systems {
+    display: flex;
+    gap: 0 20px;
+}
+.footer__system {
+}
+.footer__system__link {
+}
+.footer__system__icon {
+}
+
 
 
 
